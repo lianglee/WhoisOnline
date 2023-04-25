@@ -41,7 +41,7 @@ function whoisonline(array $params = array()): int | array | bool {
 function whoisonline_page_handler($pages): void {
 		$title   = ossn_print('whoisonline');
 		$content = ossn_set_page_layout('newsfeed', array(
-				'content' => ossn_plugin_view('whoisonline/view', $params),
+				'content' => ossn_plugin_view('whoisonline/view'),
 		));
 		echo ossn_view_page($title, $content);
 }
